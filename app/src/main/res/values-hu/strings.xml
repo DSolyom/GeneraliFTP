@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FTP Feltöltés</string>
+
+    <string name="server_title">Kérlek add meg a szerver címét:</string>
+    <string name="port_title">És a portot:</string>
+    <string name="username_title">Felhasználó:</string>
+    <string name="password_title">Jelszó:</string>
+    <string name="upload_button">File választás és feltöltés.</string>
+    <string name="trying_to_connect">Szerver ellenőrzése.</string>
+    <string name="selecting_file">File kiválasztása.</string>
+    <string name="uploading">Feltöltés.</string>
+    <string name="warning_fill_fields">Töltsd ki az összes mezőt.</string>
+    <string name="error_connection">Sikertelen csatlakozás. Ellenőrizd a megadott adatokat.</string>
+    <string name="error_file_not_found">Kiválasztott file már nem található.</string>
+    <string name="error_upload">Sikertelen feltöltés. Ellenőrizd a szerver státuszát.</string>
+    <string name="success_upload">Siker! File feltöltve.</string>
+</resources>

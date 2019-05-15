@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.ds.ftp.kotlin.FTPActivity">
+
+            <TextView
+                    style="@style/FieldTitle"
+                    android:id="@+id/server_title_view"
+                    android:text="@string/server_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/server_view" android:layout_marginTop="16dp"
+            />
+
+            <EditText
+                    android:id="@+id/server_view"
+                    style="@style/Field"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/server_title_view"
+                    app:layout_constraintBottom_toTopOf="@+id/port_title_view" android:layout_marginTop="16dp"/>
+
+            <TextView
+                    style="@style/FieldTitle"
+                    android:id="@+id/port_title_view"
+                    android:text="@string/port_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/server_view" app:layout_constraintBottom_toTopOf="@+id/port_view"
+                    android:layout_marginTop="16dp"/>
+
+            <EditText
+                    android:id="@+id/port_view"
+                    style="@style/Field"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/port_title_view"
+                    app:layout_constraintBottom_toTopOf="@+id/username_title_view"
+                    android:layout_marginTop="16dp"/>
+
+            <TextView
+                    style="@style/FieldTitle"
+                    android:id="@+id/username_title_view"
+                    android:text="@string/username_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/port_view" app:layout_constraintBottom_toTopOf="@+id/username_view"
+                    android:layout_marginTop="16dp"/>
+
+            <EditText
+                    android:id="@+id/username_view"
+                    style="@style/Field"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/username_title_view"
+                    app:layout_constraintBottom_toTopOf="@+id/password_title_view"
+                    android:layout_marginTop="16dp"/>
+
+            <TextView
+                    style="@style/FieldTitle"
+                    android:id="@+id/password_title_view"
+                    android:text="@string/password_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/username_view" app:layout_constraintBottom_toTopOf="@+id/password_view"
+                    android:layout_marginTop="16dp"/>
+
+            <EditText
+                    android:id="@+id/password_view"
+                    style="@style/Field"
+                    android:inputType="textPassword"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/password_title_view"
+                    app:layout_constraintBottom_toTopOf="@+id/message_view"
+                    android:layout_marginTop="16dp"/>
+
+            <TextView
+                    style="@style/Message"
+                    android:id="@+id/message_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/password_view" app:layout_constraintBottom_toTopOf="@+id/upload_button_view"
+                    android:layout_marginTop="16dp"/>
+
+            <Button
+                    android:id="@+id/upload_button_view"
+                    style="@style/Button"
+                    android:text="@string/upload_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/message_view"
+                    android:layout_marginTop="16dp"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

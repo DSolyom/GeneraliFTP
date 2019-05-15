@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FTP Uploader</string>
+
+    <string name="file_type">application/x-bittorrent</string>
+
+    <string name="server_title">Please enter your Server:</string>
+    <string name="port_title">And Port:</string>
+    <string name="username_title">Username:</string>
+    <string name="password_title">Password:</string>
+    <string name="upload_button">Select file and upload</string>
+    <string name="trying_to_connect">Checking server.</string>
+    <string name="selecting_file">Selecting file.</string>
+    <string name="uploading">Uploading.</string>
+    <string name="warning_fill_fields">Please fill all fields.</string>
+    <string name="error_connection">Could not connect to server. Please check given info and server status.</string>
+    <string name="error_file_not_found">Could not find selected file.</string>
+    <string name="error_upload">Error while uploading. Please check server status.</string>
+    <string name="success_upload">Success, file uploaded!</string>
+</resources>

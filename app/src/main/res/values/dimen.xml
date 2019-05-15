@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="messageFontSize">24sp</dimen>
+
+    <dimen name="titleFontSize">16sp</dimen>
+    <dimen name="fieldFontSize">14sp</dimen>
+    <dimen name="buttonFontSize">16sp</dimen>
+</resources>
